@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import Menu, Booking
+from .models import MenuItem, Booking
 
-@admin.register(Menu)
+@admin.register(MenuItem)
 class MenuAdmin(admin.ModelAdmin):
     list_display = ('title', 'price', 'inventory')
     verbose_name = 'Menu'
